@@ -4,5 +4,5 @@ class Track
   from_class :Album
   to_class :Song
 
-  property :track_number
+  property :track_number, type: Integer
 end

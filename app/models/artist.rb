@@ -3,5 +3,6 @@ class Artist
   property :name, type: String
 
 
-  has_many :in, :contributions, rel_class: :Contribution
+  has_many :out, :contributions, rel_class: :Contribution
+  has_many :out, :albums, rel_class: :Contribution, model_class: :Album
 end

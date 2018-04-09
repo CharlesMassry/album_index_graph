@@ -1,0 +1,6 @@
+<%= form_for :search, url: "/search", method: :get, remote: true do |f| %>
+  <%= f.text_field :query %>
+  <%= f.submit "Search" %>
+<% end %>
+
+<div id="songs"></div>

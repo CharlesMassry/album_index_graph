@@ -31,7 +31,7 @@ module AlbumIndexGraph
 
     config.generators { |g| g.orm :neo4j }
 
-    config.neo4j.session_type = :bolt
-    config.neo4j.session_path = ENV['NEO4J_URL'] || 'bolt://db:7687'
+    config.neo4j.session.type = :bolt
+    config.neo4j.session.path = ENV['NEO4J_URL'] || 'bolt://db:7687'
   end
 end
